@@ -10,3 +10,396 @@ a:link, a:visited {
     text-decoration: none;
     display: inline-block;
 }
+
+@charset "utf-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		4;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	12;
+	dw-gutter-percentage:	25;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+.fluid {
+	clear: both;
+	margin-left: 0;
+	width: 100%;
+	float: left;
+	display: block;
+	font-family: source-sans-pro;
+	font-style: normal;
+	font-weight: 200;
+}
+
+.fluidList {
+    list-style:none;
+    list-style-image:none;
+    margin:0;
+    padding:0;        
+}
+
+/* Mobile Layout: 480px and below. */
+  
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 86.45%;
+	padding-left: 2.275%;
+	padding-right: 2.275%;
+	clear: none;
+	float: none;
+	background-color: #FFFFFF;
+}
+#div1 {
+}
+#top {
+	color: #43a6cb;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: source-sans-pro;
+	font-style: normal;
+	font-weight: 200;
+	width: 100%;
+}
+.mainfooter {
+	background-color: #43a6cb;
+	font-family: source-sans-pro;
+	font-style: normal;
+	font-weight: 200;
+	color: #ffffff;
+}
+#mainnav {
+}
+.navlist {
+}
+.listitems {
+	background-color: #4d4d4d;
+	color: #FFFFFF;
+	width: 100%;
+	margin-left: 0;
+	clear: both;
+	display: block;
+}
+#hero {
+}
+#floatingArticle {
+	display: none;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+}
+#floatingP {
+}
+#mainarticle {
+}
+#mainp1 {
+	font-family: source-sans-pro;
+	font-style: normal;
+	font-weight: 200;
+}
+#p1 {
+}
+#mainp2 {
+	font-family: source-sans-pro;
+	font-style: normal;
+	font-weight: 200;
+}
+.centred {
+}
+#mainp3 {
+	font-family: source-sans-pro;
+	font-style: normal;
+	font-weight: 200;
+}
+#sidebar {
+}
+#sidep1 {
+	font-family: source-sans-pro;
+	font-style: normal;
+	font-weight: 200;
+}
+#sidep2 {
+	font-family: source-sans-pro;
+	font-style: normal;
+	font-weight: 200;
+}
+.zeroMargin_mobile {
+margin-left: 0;
+}
+.hide_mobile {
+display: none;
+}
+#cablecar2 {
+}
+.thispage {
+	background-color: #43a6cb;
+}
+h2 {
+	color: #43a6cb;
+	font-family: source-sans-pro;
+	font-style: normal;
+	font-weight: 200;
+}
+h2 {
+}
+h1 {
+	font-weight: 600;
+	font-size: 66px;
+	width: 100%;
+}
+figcaption {
+	font-weight: 300;
+	font-family: source-sans-pro;
+	font-style: normal;
+}
+#hero #floatingArticle h2 {
+	color: #ffffff;
+	font-weight: bold;
+	/* [disabled]padding-top: 10px; */
+	/* [disabled]padding-right: 10px; */
+	/* [disabled]padding-bottom: 10px; */
+	/* [disabled]padding-left: 10px; */
+	/* [disabled]left: 556px; */
+	/* [disabled]top: 50px; */
+}
+.gridContainer.clearfix #hero img {
+	width: 100%;
+}
+.floatleft {
+	font-family: source-sans-pro;
+	font-style: normal;
+	font-weight: 200;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+
+.gridContainer {
+	width: 90.675%;
+	padding-left: 1.1625%;
+	padding-right: 1.1625%;
+	clear: none;
+	float: none;
+	margin-left: auto;
+}
+#div1 {
+}
+#top {
+}
+.mainfooter {
+}
+#mainnav {
+}
+.navlist {
+display: block;
+}
+.listitems {
+width: 100%;
+clear: both;
+margin-left: 0;
+}
+#hero {
+	clear: left;
+	position: relative;
+}
+#floatingArticle {
+	display: block;
+	position: absolute;
+	color: #ffffff;
+	font-family: source-sans-pro;
+	font-style: normal;
+	font-weight: 200;
+	width: 34%;
+	background-color: #f8944e;
+	border-radius: 33px;
+	padding-left: 10px;
+	padding-right: 10px;
+	left: 360px;
+	top: 38px;
+	height: 73%;
+}
+#floatingP {
+	height: 0%;
+}
+#mainarticle {
+}
+#mainp1 {
+}
+#p1 {
+}
+#mainp2 {
+}
+.centred {
+display: block;
+}
+#mainp3 {
+}
+#sidebar {
+}
+#sidep1 {
+}
+#sidep2 {
+}
+.hide_tablet {
+display: none;
+}
+.zeroMargin_tablet {
+margin-left: 0;
+}
+}
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+
+.gridContainer {
+	width: 88.5%;
+	max-width: 1232px;
+	padding-left: 0.75%;
+	padding-right: 0.75%;
+	margin: auto;
+	clear: none;
+	float: none;
+	margin-left: auto;
+}
+#div1 {
+}
+#top {
+}
+.mainfooter {
+	background-color: #43a6cb;
+	color: #ffffff;
+	font-family: source-sans-pro;
+	font-style: normal;
+	font-weight: 200;
+}
+#mainnav {
+}
+.navlist {
+display: block;
+}
+.listitems {
+	width: 20%;
+	clear: none;
+	display: block;
+	text-align: center;
+}
+#hero {
+	position: relative;
+	clear: left;
+}
+#floatingArticle {
+	display: block;
+	position: absolute;
+	background-color: #F8944E;
+	width: 32%;
+	border-radius: 33px;
+	color: #ffffff;
+	font-family: source-sans-pro;
+	font-style: normal;
+	font-weight: 200;
+	left: 556px;
+	top: 50px;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	height: 250px;
+}
+#floatingP {
+}
+#mainarticle {
+	margin-left: 2%;
+	font-family: source-sans-pro;
+	font-style: normal;
+	font-weight: 200;
+	width: 50%;
+}
+#mainp1 {
+	width: 58%;
+}
+#p1 {
+}
+#mainp2 {
+	width: 58%;
+}
+.centred {
+	margin-top: auto;
+	margin-right: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+	display: block;
+}
+#mainp3 {
+}
+#sidebar {
+	margin-left: 4%;
+	float: left;
+	font-family: source-sans-pro;
+	font-style: normal;
+	font-weight: 200;
+	width: 34%;
+	clear: right;
+}
+#sidep1 {
+	width: 34%;
+	float: left;
+}
+#sidep2 {
+	width: 34%;
+	float: left;
+}
+.zeroMargin_desktop {
+margin-left: 0;
+}
+.hide_desktop {
+display: none;
+}
+.gridContainer.clearfix #sidebar {
+	float: right;
+	width: 34%;
+}
+.gridContainer.clearfix #mainarticle {
+	float: left;
+
+
+	width: 58%
+%;
+	width: 58%;
+}
+.floatright {
+
+}
+
+
+
+}
