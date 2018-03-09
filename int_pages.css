@@ -1,16 +1,63 @@
 #section1{
-    background-color: rgb(238, 0, 90)
+    
+   background-image:url('img/bouldering.jpg');
+    
+    font-size: 150%;
 }
 
 #section2{
-    background-color: rgb(44, 62, 80)
+    
+    background-image:url('img/mujer04.jpg');
+    font-size: 150%;
+    height:100%;
+    width:100%;
+    /*text-shadow: 1px 2px 1px #0F1114;*/
+    
 }
 
 #section3{
-    background-color: rgb(51, 153, 204)
+    background-color: #5772CC;
+    background-image:url('img/cloud03.jpg');
+    font-size: 150%;
 }
+
+
 
 .section{
     text-align: center;
     color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+a{
+    text-decoration: none;
+    color:white;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.btn {
+  -webkit-border-radius: 3;
+  -moz-border-radius: 3;
+  border-radius: 3px;
+  font-family: Arial;
+  color: #FF944C;
+  font-size: 20px;
+  background: #ffffff;
+  padding: 10px 20px 10px 20px;
+  border: solid #f0f0f0 2px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
 }

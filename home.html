@@ -1,0 +1,97 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Untitled Document</title>
+<link href="boilerplate.css" rel="stylesheet" type="text/css">
+<link href="fluidstyle03.css" rel="stylesheet" type="text/css">
+<!-- 
+To learn more about the conditional comments around the html tags at the top of the file:
+paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+
+Do the following if you're using your customized build of modernizr (http://www.modernizr.com/):
+* insert the link to your js here
+* remove the link below to the html5shiv
+* add the "no-js" class to the html tags at the top
+* you can also remove the link to respond.min.js if you included the MQ Polyfill in your modernizr build 
+-->
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="respond.min.js"></script>
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.--><script>var __adobewebfontsappname__="dreamweaver"</script><script src="http://use.edgefonts.net/source-sans-pro:n2,n3:default.js" type="text/javascript"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
+</head>
+<body>
+<div class="gridContainer clearfix">
+  <header id="top" class="fluid ">
+    <h1>117736145 Project </h1>
+    <nav id="mainnav" class="fluid ">
+      <div id="minMenu" class="fluid listitems hide_tablet hide_desktop" >Menu</div>
+      <ul id="navlist" class="fluid fluidList navlist">
+        <li class="fluid listitems"><a href="#" class="fluid listitems thispage">Home</a></li>
+        <li class="fluid listitems"><a href="cv.html">CV</a></li>
+        <li class="fluid listitems"><a href="interests.html">Interests</a></li>
+        <li class="fluid listitems"><a href="cloud02.html">Cloud</a></li>
+        <li class="fluid listitems"><a href="https://github.com/brianOS117736145/is1113117736145/graphs/commit-activity">Github</a></li>
+        <li class="fluid listitems"><a href="https://is1113117736145.herokuapp.com/">Heroku</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div id="hero" class="fluid ">
+    <article id="floatingArticle" class="fluid ">
+      <h2>Be Where It&rsquo;s At </h2>
+      <p id="floatingP" class="fluid">Helo and welcome to my homepage! Use the navigation above to find out more about me, my background and interests and my Cloud Services vendor, Scrufftech.</p>
+    </article>
+    <img src="img/anatomy.jpg" alt=""/></div>
+
+  <script>
+  
+  	window.addEventListener("resize", resetMenu);
+  	
+	function resetMenu(){
+		
+		if(window.innerWidth <= 480){
+			document.getElementById('navlist').style.display = 'none';
+		}
+		else{
+			document.getElementById('navlist').style.display = 'block';
+		}
+	}
+	
+  	function toggleMenu(){
+  
+  		var menu=document.getElementById('navlist');
+  		if(menu.style.display == 'none'){
+			menu.style.display = 'block';
+		}
+		else{
+			menu.style.display = 'none';
+		}
+  	}
+  
+  </script> 
+  
+  <script>
+  	$(document).ready(function(){
+		
+		$("#minMenu").click(function(){
+			$("#navlist").slideToggle(200);
+		
+		});
+		
+		
+	});
+  
+  </script>
+  
+</div>
+</body>
+</html>
